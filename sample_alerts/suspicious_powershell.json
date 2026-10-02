@@ -1,0 +1,11 @@
+{
+  "alert_id": "ALERT-001",
+  "timestamp": "2026-09-13T22:15:32",
+  "hostname": "WIN-ENDPOINT-01",
+  "username": "testuser",
+  "event_id": 4688,
+  "process": "powershell.exe",
+  "parent_process": "WINWORD.EXE",
+  "command_line": "powershell.exe -EncodedCommand SQBFAFgA",
+  "source_ip": "192.168.1.50"
+}

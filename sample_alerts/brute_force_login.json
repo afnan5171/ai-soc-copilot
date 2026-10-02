@@ -1,0 +1,11 @@
+{
+  "alert_id": "ALERT-002",
+  "timestamp": "2026-09-15T01:15:00",
+  "hostname": "WIN-SERVER-01",
+  "username": "admin",
+  "event_id": 4625,
+  "failed_login_count": 25,
+  "source_ip": "192.168.1.77",
+  "logon_type": 3,
+  "time_window_minutes": 5
+}

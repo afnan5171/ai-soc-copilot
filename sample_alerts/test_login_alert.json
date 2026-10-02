@@ -1,0 +1,11 @@
+{
+  "alert_id": "DEMO-LOGIN-001",
+  "timestamp": "2026-10-02T14:30:00Z",
+  "hostname": "LAB-WIN-01",
+  "username": "admin",
+  "event_id": 4625,
+  "failed_login_count": 25,
+  "source_ip": "192.168.1.77",
+  "logon_type": 3,
+  "time_window_minutes": 5
+}

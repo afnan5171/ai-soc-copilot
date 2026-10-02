@@ -1,0 +1,20 @@
+[
+  {
+    "alert_file": "normal_powershell.json",
+    "expected_rule_severity": "Low",
+    "acceptable_ai_severities": ["Low"],
+    "rationale": "The sample represents routine PowerShell activity without the suspicious indicators used in the other test."
+  },
+  {
+    "alert_file": "suspicious_powershell.json",
+    "expected_rule_severity": "High",
+    "acceptable_ai_severities": ["High", "Critical"],
+    "rationale": "Microsoft Word launching PowerShell with an encoded command warrants high-priority investigation."
+  },
+  {
+    "alert_file": "brute_force_login.json",
+    "expected_rule_severity": "High",
+    "acceptable_ai_severities": ["Medium", "High"],
+    "rationale": "Repeated failed logins targeting an administrative account warrant investigation, but do not establish a successful compromise."
+  }
+]

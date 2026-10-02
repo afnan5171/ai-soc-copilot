@@ -1,0 +1,18 @@
+# API keys and local configuration
+.env
+.env.*
+!.env.example
+
+# Python environments and generated files
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Investigation data
+logs/
+
+# Local tools and macOS files
+.agents/
+.claude/
+.DS_Store
