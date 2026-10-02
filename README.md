@@ -5,6 +5,10 @@ AI SOC Copilot is a security investigation project that combines rule-based dete
 
 I built it to explore a practical question: **How can AI support security analysts while keeping its recommendations accountable and subject to human judgment?**
 
+## Dashboard Preview
+
+![AI SOC Copilot showing rule-based analysis, AI assessment, and analyst review](dashboard.jpg)
+
 The application evaluates alerts, compares rule-based and AI assessments, flags disagreements, and records the analyst’s decision. A Streamlit dashboard brings the investigation together, while Docker provides a portable runtime environment.
 
 ## Key Capabilities
@@ -17,6 +21,35 @@ The application evaluates alerts, compares rule-based and AI assessments, flags 
 - **Investigation history:** Reopen pending cases and inspect previously recorded analyses and decisions.
 - **Reporting and metrics:** Export investigations as JSON and track severity disagreements and pending reviews.
 - **Containerized deployment:** Run the application through Docker Compose with persistent local audit storage.
+
+## Dashboard Walkthrough
+
+### Rule-Based and AI-Assisted Analysis
+
+![Rule engine and AI assessment of a sample failed-login alert](aianalysis.jpg)
+
+The dashboard presents deterministic rule scores alongside AI-generated
+explanations, supporting evidence, and suggested MITRE ATT&CK mappings.
+In this synthetic failed-login example, both assessments assign High
+severity while distinguishing suspicious activity from confirmed compromise.
+
+### Analyst Review and Decision
+
+![Analyst review controls with Escalate selected and the decision pending](analystdecision.jpg)
+
+Analysts can approve, reject, or escalate an investigation after reviewing
+the findings. Here, Escalate is selected but has not yet been saved.
+Each saved decision links to its investigation ID; no remediation is
+executed automatically.
+
+### Investigation History and Metrics
+
+![Saved investigations, analyst decisions, and severity disagreement metrics](investigationhistory.jpg)
+
+Investigation history links recorded analyses to analyst decisions and
+highlights pending reviews. Summary metrics show investigation volume
+and how often rule and AI severity assessments differ. The displayed
+disagreement rate describes these saved runs, not overall AI accuracy.
 
 ## Architecture
 
